@@ -44,7 +44,7 @@ void loop()
 
 int detectedNote()
 {
-  unsigned int distance = Sensor.read();
+  unsigned int distance = Sensor.read(CM);
 
   if (distance >= 5 && distance <= 15)
     return DO;
